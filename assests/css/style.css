@@ -1,0 +1,484 @@
+
+@font-face {
+  font-family: 'SaunaMonoPro';
+  src: url('../fonts/SaunaMonoPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Chakra Petch";
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/ChakraPetch-Light.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: "TH Kodchasal";
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/TH\ Kodchasal\ Bold.ttf') format('truetype');
+
+}
+
+
+/* BTN R Y G */
+nav {
+  display: flex;
+  justify-content:space-between; /* จัดให้อยู่ทางซ้าย */
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0.6rem 1rem;
+  position: fixed; /* ทำให้เมนูอยู่ด้านบนสุด */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* btn */
+
+.wrapper2 {
+  margin-top: 3.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.checkbox_item .checkbox_wrap .checkbox_inp{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 122;
+}
+
+.checkbox_item .checkbox_wrap .checkbox_mark{
+	display: inline-block;
+	position: relative;
+	border-radius: 5px;
+}
+
+.checkbox_item .checkbox_wrap .checkbox_mark:before,
+.checkbox_item .checkbox_wrap .checkbox_mark:after{
+	content: "";
+	position: absolute;
+	transition: all 0.5s ease;
+}
+
+/* basic styles */
+.checkbox_item.citem_1 .checkbox_wrap .checkbox_mark{
+	background: #f0f0f0;
+	width: 50px;
+	height: 25px;
+	padding: 2px;
+}
+
+.checkbox_item.citem_1 .checkbox_wrap .checkbox_mark:before{
+	top: 3px;
+	left: 3px;
+	width: 23px;
+	height: 23px;
+	background: #fff;
+	border-radius: 20%;
+}
+
+.checkbox_item.citem_1 .checkbox_wrap .checkbox_inp:checked ~ .checkbox_mark{
+	background: #fff237;
+}
+
+.checkbox_item.citem_1 .checkbox_wrap .checkbox_inp:checked ~ .checkbox_mark:before{
+	left: 24px;
+}
+
+/* btn end */
+
+
+.btn {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: #FF5D5B;
+  border: 4px solid #CF544D;
+}
+
+.min-btn {
+  background: #FFBB39;
+  border: 4px solid #CFA64E;
+}
+
+.max-btn {
+  background: #00CD4E;
+  border: 4px solid #0EA642;
+}
+
+/* END BTN */
+
+
+/* Points */  
+.game-c{
+  display: flex;
+  
+}
+.point-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #000000;
+  /* border: 5px solid red; */
+  padding-right: 30px; 
+}
+
+.point-container::before {
+  content: "Points: ";
+}
+/* 
+@media (max-width: 820px) {
+  .point-container::before {
+    content: "";
+  }
+} */
+
+
+/* แทบคนหา */
+
+.ST {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  /* padding-right: 15px; */
+}
+
+/* @media screen and (max-width: 620px) {
+  .ST {
+    width: 30%;
+  }
+} */
+
+
+.search__input {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 6px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 5px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+  color: rgba(87, 87, 86, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.search__input:focus {
+  outline:none;
+}
+
+/* .search__input:hover,
+.search__input:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+} */
+
+
+
+/* END S */
+
+
+
+body {
+  font-family: "SaunaMonoPro", monospace, sans-serif;
+  font-size: 0.875rem; /* ขนาดฟอนต์พื้นฐาน */
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #749099 0%, #000000 100%, );
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+main {
+  padding: 1rem; /* เพิ่มขนาด padding เพื่อทำให้ main ใหญ่ขึ้น */
+  max-width: 70rem; /* กำหนดขนาดสูงสุดให้ใหญ่ขึ้น */
+  width: 100%; /* กำหนดให้ครอบคลุม 100% ของพื้นที่ */
+  margin: 0 auto; /* จัดกึ่งกลาง */
+  margin-top: 5rem; /* ระยะห่างจากด้านบนเพื่อไม่ให้ซ้อนกับ nav */
+}
+
+section {
+  max-width: 40rem; /* ปรับขนาดให้ใหญ่ขึ้น */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.one, .two, .three, .four, .five, .six {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-top: -40px;
+  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+.one img, .two img, .three img, .four img, .five img, .six img {
+  width: 7rem;
+  height: auto;
+  max-width: 100%;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  margin-left: 47px;
+}
+@media screen and (max-width: 500px) {
+  .one {
+    display: flex;
+    flex-direction: column; /* เปลี่ยนการจัดเรียงเป็นแนวตั้ง */
+    align-items: center; /* จัดเรียงองค์ประกอบให้ชิดซ้าย */
+  }
+  
+  .one img {
+    margin-left: 0; /* ลบการเว้นระยะด้านซ้าย */
+    margin-top: 1rem; /* เพิ่มระยะห่างด้านบน */
+  }
+}
+
+.one img:hover, .two img:hover, .three img:hover, .four img:hover, .five img:hover, .six img:hover {
+  filter: brightness(0.9);
+}
+
+.one .text, .two .text, .three .text, .four .text, .five .text, .six .text {
+  flex: 1;
+  color: #757575; /* สีของข้อความ */
+}
+
+.thaiT{
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.fsd{
+  font-weight: 600;
+  color: rgb(255, 33, 33);
+}
+.fsd2{
+  font-weight: 600;
+  color: #616161;
+}
+.Skills{
+  font-weight: 600;
+  color: rgb(11, 184, 236);
+}
+.weeraphap{
+  /* text-decoration: underline; */
+  font-weight: 600;
+  color: #252525;
+}
+
+.university{
+  font-weight: 600;
+  color: rgb(207, 62, 207);
+}
+/* .university2{
+  font-weight: 600;
+  color: #5c5c5c;
+} */
+/* .vit{
+  font-weight: 600;
+  color: rgb(243, 89, 223);
+} */
+h1 {
+  color: black;
+  font-weight: 600; /* ความหนาของฟอนต์ */
+  padding-bottom: 1px;
+}
+
+h2 {
+  color: black;
+}
+
+.hAb {
+  font-size: 22px;
+  
+}
+
+.N {
+  font-weight: 10000;
+  font-family: "SaunaMonoPro", monospace, sans-serif;
+  font-size: 1.7rem;
+}
+  .hAb {
+    font-size: 1.7rem;
+    font-weight: 10000;
+  font-family: "SaunaMonoPro", monospace, sans-serif;
+  font-size: 25
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  /* Learning */
+
+  .tags li {
+    list-style: none  ; 
+  }
+
+  .tags {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* ให้รับรู้การขึ้นบรรทัดใหม่เมื่อตัวอักษรเกิน */
+  }
+  
+  .tag {
+    background: #eee;
+    border-radius: 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    
+  }
+
+  /* SKILLS RED GREEN YELLOW */
+
+
+  .list-tags li {
+    list-style: none  ; 
+    display: flex;
+    align-items: center;
+  }
+
+  .list-tags {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    overflow: hidden; 
+    padding: 0;
+  }
+
+  .colorR-tag {
+    background: #ff0000;
+    border-radius: 3px;
+    color: #999;
+    display: inline-block;
+    height: 17px;
+    line-height: 26px;
+    padding: 0 3px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    
+  }
+  .colorY-tag {
+    background: #fffb00;
+    border-radius: 3px;
+    color: #999;
+    display: inline-block;
+    height: 17px;
+    line-height: 26px;
+    padding: 0 3px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    
+  }
+  .colorG-tag {
+    background: #00ff22;
+    border-radius: 3px;
+    color: #999;
+    display: inline-block;
+    height: 17px;
+    line-height: 26px;
+    padding: 0 3px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    
+  }
+
+
+  .four li{
+    list-style: none;
+
+  }
+
+  .four li a{
+    color: #000000;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 1px;
+  }
+
+
+
+  /* COINS */
+ 
+.coin {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveDown linear forwards;
+  cursor: pointer;
+  background-image: url('/assests/img/coin.png'); /* ตั้งค่ารูปภาพเหรียญ */
+  background-size: cover;
+}
+
+@keyframes moveDown {
+  to {
+    top: 100%;
+  }
+}
+
+
+.highlight {
+  background-color: yellow;
+}

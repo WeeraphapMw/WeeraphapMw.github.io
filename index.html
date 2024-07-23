@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="icon" type="image/png" href="assests/img/icon.png">
+</head>
+
+
+
+<body>
+  <nav>
+   
+
+    
+
+    <div class="wrapper">
+      <div class="btn close-btn"></div>
+      <div class="btn min-btn"></div>
+      <div class="btn max-btn"></div>
+    </div>
+
+    <div class="ST">
+      <input id="highlighter" onkeyup="highlight()"  class="search__input" type="text" placeholder="">
+    
+   
+    <div class="wrapper2">
+      <div class="checkbox_item citem_1">
+        <label class="checkbox_wrap">
+          <input type="checkbox" name="checkbox" class="checkbox_inp">
+          <span class="checkbox_mark"></span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+
+    <div class="game-c" id="game-container">
+      <div class="point-container"> <span id="points">0</span></div>
+      <div id="coin-container"></div>
+    </div>
+    
+  </nav>
+
+  <main>
+    <section id="inputText" contenteditable onkeyup="highlight()">
+      
+      <div class="one" >
+        <div class="text">
+          <h1 class="N" >My name is Weeraphap :D</h1>
+          <!-- <p>Hello, my name is Weeraphap Makwong. I have had a passion for programming since my high school years. During my final years in high school, I dedicated myself to honing my skills to pursue my future dream of becoming a full-stack developer. This dedication and hard work have led me to choose this university, where I am committed to furthering my education and achieving my career goals.</p> -->
+          <p class="thaiT" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สวัสดีครับผม <span class="weeraphap">นายวีรภาพ มากวงษ์</span> มีความชื่นชอบในการเขียนโปรแกรมและพัฒนาเว็บไซต์มาตั้งแต่มัธยมต้น และมีความมุ่งมั่นที่อยากจะเป็น <span class="fsd">Full Stack Developer</span> ในอนาคต ด้วยความหลงใหลในด้านการเขียนโปรแกรมและการพัฒนา <span class="Skills">Skills</span> ของตนเอง ผมจึงเลือกที่จะศึกษาต่อที่<span class="university2">มหาวิทยาลัยเชียงใหม่ในคณะวิทยาการคอมพิวเตอร์</span> เพื่อที่จะได้เรียนรู้และพัฒนาทักษะต่าง ๆ ให้ดียิ่งขึ้น และทำตามความฝันในสายอาชีพที่เลือกครับ</p>          
+          <p>Portfolio Website by Weeraphap</p>
+
+        </div>
+        <img src="assests/img/icon.png" alt="Profile Icon">
+      </div>
+      
+      <div class="two">
+        <div class="text">
+          <h1 class="hAb">About </h1>
+          <!-- <p>Choosing Chiang Mai University was a decision influenced by several important factors. First and foremost, Chiang Mai University is renowned for its Computer Science faculty,
+             particularly for its modern curriculum and hands-on teaching approach. This aligns perfectly with my goal of becoming a Full Stack Developer.
+              Additionally, the university's location in a peaceful and study-friendly city is another significant reason. Chiang Mai offers various resources and internship 
+              opportunities, which will enable me to continuously learn and develop my skills. Lastly, I believe that being part of Chiang Mai University 
+              will allow me to meet like-minded individuals with similar interests and goals, facilitating the exchange of knowledge and experiences.
+               This is crucial for growth in the career path I aspire to.</p> -->
+          <p class="thaiT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การเลือก <span class="university">มหาวิทยาลัยเชียงใหม่</span> เป็นทางเลือกของผมเนื่องจากหลายปัจจัยที่สำคัญครับ
+            อันดับแรก มหาวิทยาลัยเชียงใหม่มีชื่อเสียงในด้านการศึกษาคณะ<span class="vit">วิทยาการคอมพิวเตอร์</span>โดยเฉพาะในเรื่องของหลักสูตรที่ทันสมัยและการเรียนการสอนที่เน้นการปฏิบัติ ซึ่งสอดคล้องกับเป้าหมายของผมในการเป็น <span class="fsd2">Full Stack Developer</span>
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นอกจากนี้ การที่มหาวิทยาลัยเชียงใหม่ตั้งอยู่ในเมืองที่มีบรรยากาศที่สงบและเป็นมิตรกับการศึกษา ก็เป็นอีกหนึ่งเหตุผลที่สำคัญครับ เมืองเชียงใหม่มีแหล่งข้อมูลและโอกาสในการฝึกงานที่หลากหลาย ซึ่งจะช่วยให้ผมได้เรียนรู้และพัฒนาทักษะอย่างต่อเนื่อง
+            สุดท้ายนี้ ผมเชื่อว่าการเป็นส่วนหนึ่งของมหาวิทยาลัยเชียงใหม่จะช่วยให้ผมได้พบเจอกับบุคคลที่มีความสนใจและเป้าหมายคล้ายกัน ทำให้สามารถแลกเปลี่ยนความรู้และประสบการณ์ ซึ่งเป็นสิ่งสำคัญสำหรับการเติบโตในสายอาชีพที่ผมใฝ่ฝัน
+          </p>
+        </div>
+      </div>
+      <div class="three">
+        <div class="text">
+          <h2>Learning</h2>
+          <ul class="tags">
+            <li><a href="#" class="tag">HTML</a></li>
+            <li><a href="#" class="tag">CSS</a></li>
+            <li><a href="#" class="tag">JAVASCRIPT</a></li>
+            <li><a href="#" class="tag">LUA</a></li>
+            <li><a href="#" class="tag">PYTHON</a></li>
+            <li><a href="#" class="tag">PHP</a></li>
+            <li><a href="#" class="tag">NODE.JS</a></li>
+            <li><a href="#" class="tag">BOOTSTRAP</a></li>
+            <li><a href="#" class="tag">REACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="four">
+        <div class="text">
+          <h2>Location</h2>
+          <li><a href="https://maps.app.goo.gl/D2GrLACgkCj4b8jA6" target="_blank">I from Chiang Rai</a></li>
+        </div>
+      </div>
+      <div class="five">
+        <div class="text">
+          <h2>Skills</h2>
+          <ul class="list-tags">
+            <li><a href="#" class="colorR-tag"></a></li>
+            <li><a href="#" class="tag">PHP</a></li>
+            <li><a href="#" class="tag">PYTHON</a></li>
+          </ul>
+          <ul class="list-tags">
+            <li><a href="#" class="colorY-tag"></a></li>
+            <li><a href="#" class="tag">JAVASCRIPT</a></li>
+          </ul>
+          <ul class="list-tags">
+            <li><a href="#" class="colorG-tag"></a></li>
+            <li><a href="#" class="tag">HTML</a></li>
+            <li><a href="#" class="tag">CSS</a></li>
+            <li><a href="#" class="tag">LUA</a></li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="six">
+        <div class="text">
+          <h2>Contact channels</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aperiam sint accusamus, cupiditate fuga possimus similique debitis tempore quo earum reiciendis necessitatibus. Consequatur iure nam voluptatum dolorum sunt, harum vero cupiditate maiores veritatis eius id aliquam, iusto aperiam quo. Sed magnam debitis quis dolor molestiae? Commodi illo iusto voluptatibus aliquid voluptate libero culpa soluta, nulla magnam esse incidunt eveniet eaque doloremque adipisci, nesciunt ad pariatur ipsam veniam porro. Neque, perspiciatis mollitia quo nostrum vitae a quisquam vero non iste, recusandae maiores quae modi molestiae illo impedit praesentium aspernatur dignissimos, eligendi repellendus porro tempore ipsa? Amet asperiores totam ipsum dicta aliquid.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assests/js/javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
